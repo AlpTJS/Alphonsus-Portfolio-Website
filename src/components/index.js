@@ -7,6 +7,7 @@ import Experience from './Experience';
 import OtherExperience from './OtherExperience';
 import Works from './Works';
 import Feedbacks from './Feedbacks';
+import Hobby from './Hobby';
 import Contact from './Contact';
 
 export {
@@ -17,6 +18,7 @@ export {
   Experience,
   OtherExperience,
   Works,
+  Hobby,
   Feedbacks,
   Contact,
   EarthCanvas, 
