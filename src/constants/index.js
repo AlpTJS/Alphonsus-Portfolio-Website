@@ -237,7 +237,7 @@ const hobbies = [
         color: "pink-text-gradient",
       },
     ],
-    images: [carrent, carrent],
+    images: [carrent, carrent, carrent],
     source_code_link: "https://github.com/",
   },
   {

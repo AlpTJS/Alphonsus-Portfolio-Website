@@ -1,4 +1,3 @@
-
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import React from 'react';
@@ -17,21 +16,19 @@ const ImageCard = ({ index, name, description, tags, images, source_code_link })
   // console.log('Rendering ImageCard:', name, images);
   const carouselSettings = {
     dots: true,
-    // infinite: true,
-    // speed: 500,
-    // slidesToShow: 1,
-    // slidesToScroll: 1,
-    disableButtons: true, //this does not remove buttons
+    disableButtonsControls: true,//this does not remove buttons
+    
+    
   };
   
   return (
     
-    <motion.div className='flex items-center flex-column-reverse'>
-      <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} classname = 'flex flex-left' >
-        <div className='bg-tertiary p-5 rounded-2xl sm:w-[400px] w-full relative'>
+    <motion.div className='flex items-center bg-tertiary flex-col sm:flex-row w-full'>
+      
+        <div className='bg-tertiary p-5 rounded-2xl w-full sm:w-[50%] sm:order-1'> 
          <AliceCarousel {...carouselSettings}>
             {images.map((image, imgIndex) => (
-              <div key={`${name}-img-${imgIndex}`} className='relative w-full h-[230px]'>
+              <div key={`${name}-img-${imgIndex}`} className='relative w-full h-[300px]'>
               
                 <img
                   src={image}
@@ -41,9 +38,10 @@ const ImageCard = ({ index, name, description, tags, images, source_code_link })
             </div>))}
           </AliceCarousel>
         </div>
-      </motion.div>
 
-      <p className=' text-secondary p-10 h-full text-[17px] max-w-3xl leading-[30px] flex flex-right'>
+
+      {/* <p className=' text-secondary text-center p-auto ml-10 mb-15 text-[17px] max-w-3xl leading-[30px] flex flex-right'> */}
+      <p className=' text-secondary text-center w-full pl-8 pr-8 mb-10 sm:w-[50%] sm:order-2'> 
         {description} {/* Add your paragraph here */}
       </p>
       
@@ -52,12 +50,13 @@ const ImageCard = ({ index, name, description, tags, images, source_code_link })
   );
 };
 
-const Hobby = () => {
+
+const Organization = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My Work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
+        <p className={`${styles.sectionSubText} `}>Organizations</p>
+        <h2 className={`${styles.sectionHeadText}`}>Organizations</h2>
       </motion.div>
 
       <div className='mt-20 flex flex-wrap gap-7'>
@@ -67,11 +66,8 @@ const Hobby = () => {
       </div>
     </>
   );
-};
+}
 
 
 
-export default SectionWrapper(Hobby, "");
-
-
-//Hobby.jsx is not staying within width area when shrink the screen
+export default SectionWrapper(Organization, "");
