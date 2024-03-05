@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <footer className="bg-gray-800 text-white text-xl font-bold">
     <div className="ml-20 mr-20 text-center py-4 flex items-center justify-between">
-      <p classname="flex-grow ">&copy; 2023 Alphonsus &nbsp;|&nbsp; (╯°□°）╯︵ ┻━┻  </p>
+      <p >&copy; 2023 Alphonsus &nbsp;|&nbsp; (╯°□°）╯︵ ┻━┻  </p>
       <div className="flex space-x-6 ">
       <div
               onClick={() => window.open(source_code_link, "_blank")}
