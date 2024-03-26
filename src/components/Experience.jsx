@@ -23,12 +23,24 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import AliceCarousel from "react-alice-carousel";
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 const ExperienceCard = ({ experience }) => {
+  const carouselSettings = {
+    dots:false,
+    arrows: true,
+    
+    // infinite: true,
+    // speed: 500,
+    // slidesToShow: 1,
+    // slidesToScroll: 1,
+   
+  };
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
+        background: "#124429",
         color: "#fff",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
@@ -47,10 +59,7 @@ const ExperienceCard = ({ experience }) => {
     >
       <div>
         <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
-        <p
-          className='text-secondary text-[16px] font-semibold'
-          style={{ margin: 0 }}
-        >
+        <p className='text-secondary text-[16px] font-semibold' style={{ margin: 0 }}> 
           {experience.company_name}
         </p>
       </div>
@@ -59,17 +68,26 @@ const ExperienceCard = ({ experience }) => {
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
-          >
-
+            className='text-white-100 text-[14px] pl-1 tracking-wider'>
             {point}
-
-            
           </li>
-          // Add the cards pf image somewhere over here
-          
         ))}
       </ul>
+
+      
+         <AliceCarousel {...carouselSettings}>
+            {experience.images.map((image, imgIndex) => (
+              <div key={`${name}-img-${imgIndex}`} className='relative mt-10 h-[230px]'>
+              
+                <img
+                  src={image}
+                  alt='project_image'
+                  className='w-full h-full object-cover rounded-2xl'
+                />
+            </div>))}
+          </AliceCarousel>
+    
+      
     </VerticalTimelineElement>
   );
 };
@@ -78,15 +96,22 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        {/* <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
-        </p> */}
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Job Experience
         </h2>
 
-        <p className={`${styles.sectionSubText} text-center`}>
-            Tech 
+        <p className={`${styles.sectionSubText} text-center flex items-center justify-center `}>
+          <span className="text-[#73A2CC]">
+            Tech
+          </span>
+          <span>&nbsp;</span>
+          <span className="text-[#FAF8F6]">
+          &
+          </span>
+          <span>&nbsp;</span>
+          <span className="text-[#FF6961]">
+            Others
+          </span>
         </p>
       </motion.div>
 

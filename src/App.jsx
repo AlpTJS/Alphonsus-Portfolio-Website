@@ -2,6 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import { About, Experience, Organization, Feedbacks, Hobby, Hero, Navbar,Works, Contact} from "./components";
 
+//bg in tailwindconfig.js
 const App = () => {
   return (
     <BrowserRouter>
@@ -10,13 +11,19 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
-        {/* Can change background here */}
+        <div className=' bg-[#e2dbc5]'>
         <About />
+        </div>
+        <div className='bg-flower-pattern bg-repeat '>
         <Works />
+        </div>
+        <div className='bg-paint-pattern bg-cover'>
         <Experience />
+        </div>
+        <div className='bg-light-pattern bg-cover'>
         <Feedbacks />
-        <Hobby />
-        <Organization />
+        </div>
+        
         <Contact />
       </div>
     </BrowserRouter>
@@ -24,8 +31,6 @@ const App = () => {
 }
 
 export default App;
-
-
 
 
 

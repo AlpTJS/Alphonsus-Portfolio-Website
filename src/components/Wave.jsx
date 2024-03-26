@@ -9,20 +9,28 @@ import React, { useEffect, useRef } from 'react'
 import { Canvas } from '@react-three/fiber';
 import { useGLTF, useAnimations, OrbitControls } from '@react-three/drei'
 
+const Action = (group,Animation) => {
+  // const { actions } = useAnimations(Animation, group);
+
+  // useEffect(() => {
+  //   actions['Armature|mixamo.com|Layer0_Armature'].play();
+  // }, [actions.Armature|mixamo.com|Layer0_Armature ]);
+  // useEffect(() => {
+  //   actions['Armature|mixamo.com|Layer0_Armature'].play();
+  // }, [actions]);
+}
 
 const Wave = (props) => {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('../src/assets/Wave.glb')
+  const { nodes, materials, Animation } = useGLTF('../src/assets/Wave.glb')
   
-
-
-
+  // const { actions } = useAnimations(Animation, group);
+  // console.log(actions)
+  
   return (
- 
     <Canvas>
-   
-      
-    <OrbitControls />
+    {/* <Action group={group} Animation={Animation}/> */}
+    {/* <OrbitControls /> */}
     <directionalLight intensity={3}/>
     <ambientLight intensity={0.5}/>
     <group ref={group} {...props} dispose={null}>
@@ -36,17 +44,9 @@ const Wave = (props) => {
         </group>
       </group>
     </group>
-
-    {animations && (
-        <primitive
-          object={animations}
-          ref={(group) => {
-            if (group) useAnimations(animations, group);
-          }}
-        />
-      )}
-
+    
     </Canvas>
+    
   )
   
 }
@@ -54,4 +54,4 @@ const Wave = (props) => {
 
 export default Wave
 
-useGLTF.preload('/Wave.glb')
+useGLTF.preload('../src/assets/Wave.glb')

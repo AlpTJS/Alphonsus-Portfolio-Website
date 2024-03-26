@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#050816",
-        secondary: "#aaa6c3",
+        secondary: "#EAE8E4",
         tertiary: "#151030",
         "black-100": "#100d25",
         "black-200": "#090325",
@@ -20,6 +20,12 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
+        "flower-pattern": "url('/src/assets/flower.jpeg')",
+        "paint-pattern":"url('/src/assets/timeline.jpg')",
+        "texture-pattern":"url('/src/assets/texture.jpg')",
+        "dark-pattern":"url('/src/assets/dark.jpg')",
+        "chalk-pattern":"url('/src/assets/chalk.jpg')",
+        "light-pattern":"url('/src/assets/light.jpg')",
       },
     },
   },

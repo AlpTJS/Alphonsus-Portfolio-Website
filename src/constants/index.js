@@ -42,7 +42,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Alphonsus",
+    title: "Hey there!",
     icon: web,
   },
   // {
@@ -78,7 +78,8 @@ const experiences = [
     cards: [
       "Event Day1",
       "Example Event Day 2"
-    ]
+    ],
+    images: [carrent, carrent],
   },
   {
     title: "React Native Developer",
@@ -92,6 +93,7 @@ const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
+    images: [carrent, carrent],
   },
   {
     title: "Web Developer",
@@ -105,6 +107,7 @@ const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
+    images: [carrent, carrent],
   },
   {
     title: "Full stack Developer",
@@ -118,6 +121,7 @@ const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
+    images: [carrent, carrent],
   },
 ];
 
