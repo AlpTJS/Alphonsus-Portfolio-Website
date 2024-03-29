@@ -4,8 +4,10 @@ import { github } from "../assets";
 const Contact = () => {
   return (
     <footer className="bg-gray-800 text-white text-xl font-bold">
-    <div className="ml-20 mr-20 text-center py-4 flex items-center justify-between">
-      <p >&copy; 2023 Alphonsus &nbsp;|&nbsp; (╯°□°）╯︵ ┻━┻  </p>
+    <div className="ml-10 mr-10 text-center py-4 flex items-center justify-between">
+
+      <div className="flex space-x-6 ">&copy; 2023 Alphonsus &nbsp;|&nbsp; (╯°□°）╯︵ ┻━┻  </div>
+
       <div className="flex space-x-6 ">
       <div
               onClick={() => window.open(source_code_link, "_blank")}

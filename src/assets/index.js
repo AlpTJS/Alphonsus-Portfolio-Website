@@ -32,12 +32,6 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
-import cactus from "./dino/cactus.png";
-import dinoLose from "./dino/dino-lose.png";
-import dinoStationary from "./dino/dino-stationary.png";
-import dinoRun0 from "./dino/dino-run-0.png";
-import dinoRun1 from "./dino/dino-run-1.png";
-import ground from "./dino/ground.png"
 
 export {
   logo,
@@ -70,10 +64,4 @@ export {
   carrent,
   jobit,
   tripguide,
-  cactus,
-  dinoLose,
-  dinoStationary,
-  dinoRun0,
-  dinoRun1,
-  ground,
 };

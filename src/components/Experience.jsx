@@ -8,8 +8,6 @@
 
 // export default Experience
 
-
-
 import React from "react";
 import {
   VerticalTimeline,
@@ -24,18 +22,12 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import AliceCarousel from "react-alice-carousel";
-import 'react-alice-carousel/lib/alice-carousel.css';
+import "react-alice-carousel/lib/alice-carousel.css";
 
 const ExperienceCard = ({ experience }) => {
   const carouselSettings = {
-    dots:false,
+    dots: false,
     arrows: true,
-    
-    // infinite: true,
-    // speed: 500,
-    // slidesToShow: 1,
-    // slidesToScroll: 1,
-   
   };
   return (
     <VerticalTimelineElement
@@ -48,46 +40,50 @@ const ExperienceCard = ({ experience }) => {
       iconStyle={{ background: experience.iconBg }}
       // Circle icon image
       icon={
-        <div className='flex justify-center items-center w-full h-full'>
+        <div className="flex justify-center items-center w-full h-full">
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
+            className="w-[60%] h-[60%] object-contain"
           />
         </div>
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
-        <p className='text-secondary text-[16px] font-semibold' style={{ margin: 0 }}> 
+        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <p
+          className={`text-[${experience.company_nameBg}] text-[16px] font-semibold`}
+          style={{ margin: 0 }}
+        >
           {experience.company_name}
         </p>
       </div>
 
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
+      <ul className="mt-5 list-disc ml-5 space-y-2">
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'>
+            className="text-white-100 text-[14px] pl-1 tracking-wider"
+          >
             {point}
           </li>
         ))}
       </ul>
 
-      
-         <AliceCarousel {...carouselSettings}>
-            {experience.images.map((image, imgIndex) => (
-              <div key={`${name}-img-${imgIndex}`} className='relative mt-10 h-[230px]'>
-              
-                <img
-                  src={image}
-                  alt='project_image'
-                  className='w-full h-full object-cover rounded-2xl'
-                />
-            </div>))}
-          </AliceCarousel>
-    
-      
+      <AliceCarousel {...carouselSettings}>
+        {experience.images.map((image, imgIndex) => (
+          <div
+            key={`${name}-img-${imgIndex}`}
+            className="relative mt-10 h-[230px]"
+          >
+            <img
+              src={image}
+              alt="project_image"
+              className="w-full h-full object-cover rounded-2xl"
+            />
+          </div>
+        ))}
+      </AliceCarousel>
     </VerticalTimelineElement>
   );
 };
@@ -100,24 +96,19 @@ const Experience = () => {
           Job Experience
         </h2>
 
-        <p className={`${styles.sectionSubText} text-center flex items-center justify-center `}>
-          <span className="text-[#73A2CC]">
-            Tech
-          </span>
+        <p
+          className={`${styles.sectionSubText} text-center flex items-center justify-center `}
+        >
+          <span className="text-[#73A2CC]">Tech</span>
           <span>&nbsp;</span>
-          <span className="text-[#FAF8F6]">
-          &
-          </span>
+          <span className="text-[#FAF8F6]">&</span>
           <span>&nbsp;</span>
-          <span className="text-[#FF6961]">
-            Others
-          </span>
+          <span className="text-[#FF6961]">Others</span>
         </p>
       </motion.div>
 
-
-    {/* Click Experiences to modify description*/}
-      <div className='mt-20 flex flex-col'>
+      {/* Click Experiences to modify description*/}
+      <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard

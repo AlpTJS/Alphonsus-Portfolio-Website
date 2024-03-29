@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 
-import Game from "./Game";
+
 // import Model from "./Wave";
 import { Avatar } from "./Avatar";
 import { Canvas } from "@react-three/fiber"; // Canvas working on Wave but not Hero.jsx
@@ -59,9 +59,9 @@ const Hero = () => {
       
 
       </div>
-      <div className="flex justify-center items-center">
+      {/* <div className="flex justify-center items-center">
       <Avatar />
-      </div>
+      </div> */}
       
         </div>
       
