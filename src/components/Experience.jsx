@@ -99,11 +99,11 @@ const Experience = () => {
         <p
           className={`${styles.sectionSubText} text-center flex items-center justify-center `}
         >
-          <span className="text-[#73A2CC]">Tech</span>
-          <span>&nbsp;</span>
-          <span className="text-[#FAF8F6]">&</span>
-          <span>&nbsp;</span>
-          <span className="text-[#FF6961]">Others</span>
+          <h2 className="text-[#73A2CC]">Tech</h2>
+          <h2>&nbsp;</h2>
+          <h2 className="text-[#FAF8F6]">&</h2>
+          <h2>&nbsp;</h2>
+          <h2 className="text-[#FF6961]">Others</h2>
         </p>
       </motion.div>
 
@@ -122,4 +122,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "Experience");

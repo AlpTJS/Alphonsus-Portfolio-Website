@@ -26,7 +26,7 @@ function HorizontalOrbitControls(props) {
 export function Avatar(props) {
   const { nodes, materials } = useGLTF('/models/Waving.glb')
   return (
-    <Canvas shadows camera={{position:[0,400,900], fov:50}}>
+    <Canvas shadows camera={{ position: [0, 400, 900], fov: 45 }} style={{ width: '100%', height: '60vh' }}>
     <Environment preset ="sunset"/>
     {/* <HorizontalOrbitControls enableZoom={false} enablePan={false}/> */}
     <OrbitControls enableZoom={false} enablePan={false}/>

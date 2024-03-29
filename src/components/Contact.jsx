@@ -6,7 +6,7 @@ const Contact = () => {
     <footer className="bg-gray-800 text-white text-xl font-bold">
     <div className="ml-10 mr-10 text-center py-4 flex items-center justify-between">
 
-      <div className="flex space-x-6 ">&copy; 2023 Alphonsus &nbsp;|&nbsp; (╯°□°）╯︵ ┻━┻  </div>
+      <div className="flex mr-10 ">&copy; 2023 Alphonsus &nbsp;|&nbsp; (╯°□°）╯︵ ┻━┻  </div>
 
       <div className="flex space-x-6 ">
       <div
