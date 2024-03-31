@@ -141,4 +141,4 @@ export function Avatar(props) {
 }
 
 
-useGLTF.preload('public/models/Waving.glb')
+useGLTF.preload('../../public/models/Waving.glb')
