@@ -57,7 +57,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="absolute bottom-0  transform -translate-x-1/   ">
-          {/* <Avatar /> */}
+          <Avatar />
         </div>
       </div>
       
