@@ -26,7 +26,7 @@ function HorizontalOrbitControls(props) {
 export function Avatar(props) {
   console.log('test');
   console.log('File directory:', __dirname);
-  const { nodes, materials } = useGLTF('/Waving.glb')
+  const { nodes, materials } = useGLTF('Waving.glb')
   return (
     <Canvas shadows camera={{ position: [0, 400, 900], fov: 45 }} style={{ width: '100%', height: '60vh' }}>
     <Environment preset ="sunset"/>
@@ -143,4 +143,4 @@ export function Avatar(props) {
 }
 
 
-useGLTF.preload('/Waving.glb')
+useGLTF.preload('Waving.glb')
