@@ -22,7 +22,9 @@ function HorizontalOrbitControls(props) {
 }
 
 
+
 export function Avatar(props) {
+console.log('File directory:', __dirname);
   const { nodes, materials } = useGLTF('public/models/Waving.glb')
   return (
     <Canvas shadows camera={{ position: [0, 400, 900], fov: 45 }} style={{ width: '100%', height: '60vh' }}>
