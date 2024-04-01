@@ -7,7 +7,7 @@ Command: npx gltfjsx@6.2.16 .\src\components\model\Waving.glb
 import React, { useRef, duseEffect } from 'react'
 import {Environment,  OrbitControls, useFBX, useGLTF} from '@react-three/drei'
 import { Canvas, useFrame, extend } from '@react-three/fiber';
-import {Waving} from Waving.glb;
+
 // Extend OrbitControls to create a custom control
 extend({ OrbitControls });
 
@@ -27,7 +27,7 @@ extend({ OrbitControls });
 export function Avatar(props) {
   console.log('test');
   console.log('File directory:', __dirname);
-  const { nodes, materials } = useGLTF(Waving)
+  const { nodes, materials } = useGLTF('./Waving.glb')
   return (
     <Canvas shadows camera={{ position: [0, 400, 900], fov: 45 }} style={{ width: '100%', height: '60vh' }}>
     <Environment preset ="sunset"/>
@@ -144,4 +144,4 @@ export function Avatar(props) {
 }
 
 
-useGLTF.preload(Waving)
+useGLTF.preload('./Waving.glb')
