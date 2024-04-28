@@ -17,7 +17,7 @@ const App = () => {
         <div className='bg-flower-pattern bg-repeat '>
         <Works />
         </div>
-        <div className='bg-paint-pattern bg-cover'>
+        <div className='bg-paint-pattern bg-repeat'>
         <Experience />
         </div>
         <div className='bg-light-pattern bg-cover'>

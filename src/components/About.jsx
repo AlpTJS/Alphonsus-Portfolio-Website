@@ -35,6 +35,29 @@ const ServiceCard = ({ index, title, icon }) => (
   </Tilt>
 );
 
+const ScrollDownAnimation = () => (
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, delay: 2 }}
+    className="fixed bottom-5 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
+  >
+    <motion.div
+      initial={{ y: -10 }}
+      animate={{ y: 10 }}
+      transition={{
+        y: {
+          duration: 1.5,
+          yoyo: Infinity,
+          ease: "easeInOut",
+        },
+      }}
+      className="w-4 h-4 rounded-full bg-white"
+    ></motion.div>
+    <p className="text-gray-400 mt-1">Scroll Down</p>
+  </motion.div>
+);
+
 const About = () => {
   return (
     <div className="flex flex-col items-center">
@@ -59,6 +82,7 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
+      <ScrollDownAnimation />
     </div>
   );
 };

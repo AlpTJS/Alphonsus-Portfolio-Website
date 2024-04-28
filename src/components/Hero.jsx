@@ -10,9 +10,9 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
-       {/* <section className={`relative w-full  mx-auto`}></section> and remove absolute */}
-      {/* Hi Im Alphonsus */}
+    //h-screen: occupies the entire screen
+    <section className={`relative w-full h-screen mx-auto`}> 
+    
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto  ${styles.paddingX}  flex flex-row items-start gap-5`}
       >
@@ -56,6 +56,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        {/* Removed as 3d Avatar had troubles being uploaded to github pages */}
         {/* <div className="absolute bottom-0  transform -translate-x-1/   ">
           <Avatar />
         </div> */}
