@@ -9,13 +9,6 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 
-// const Work = () => {
-//   return (
-//     <div>Work</div>
-//   )
-// }
-// export default Work;
-
 const ProjectCard = ({
   index,
   name,

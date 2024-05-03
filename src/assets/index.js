@@ -46,6 +46,11 @@ import scenestealerbg from "./company/scenestealerbg.jpg"
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import goatscan from "./GoatScanbg.jpg";
+import portfolio from "./Portfoliobg.png"
+
+
+
 import ankit from "./ankit.png"
 import banhup from "./Bannhup.png"
 import elliot from "./Elliot.png"
@@ -98,4 +103,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  goatscan,
+  portfolio,
 };
