@@ -14,7 +14,6 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
@@ -34,6 +33,7 @@ const ExperienceCard = ({ experience }) => {
       contentStyle={{
         background: "#124429",
         color: "#fff",
+        boxShadow: "0 0 20px #22804d",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}

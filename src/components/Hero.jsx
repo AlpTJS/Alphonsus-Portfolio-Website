@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import "../scrollwheel.css";
 
 // import Model from "./Wave";
 import { Avatar } from "./Avatar";
@@ -7,12 +8,10 @@ import { Canvas } from "@react-three/fiber"; // Canvas working on Wave but not H
 import { github, Linkedin, Instagram } from "../assets";
 import { Link } from "react-router-dom";
 
-
 const Hero = () => {
   return (
     //h-screen: occupies the entire screen
-    <section className={`relative w-full h-screen mx-auto`}> 
-    
+    <section className={`relative w-full h-screen mx-auto`}>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto  ${styles.paddingX}  flex flex-row items-start gap-5`}
       >
@@ -55,13 +54,20 @@ const Hero = () => {
               <img src={Instagram} alt="source code" />
             </div>
           </div>
+          <div className="scrolldown justify-center absolute bottom-12 left-1/2 transform -translate-x-1/2">
+          <div className="chevrons">
+            <div className="chevrondown"></div>
+            <div className="chevrondown"></div>
+          </div>
+        </div>
         </div>
         {/* Removed as 3d Avatar had troubles being uploaded to github pages */}
         {/* <div className="absolute bottom-0  transform -translate-x-1/   ">
           <Avatar />
         </div> */}
+        
       </div>
-      
+  
     </section>
   );
 };

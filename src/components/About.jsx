@@ -35,28 +35,7 @@ const ServiceCard = ({ index, title, icon }) => (
   </Tilt>
 );
 
-const ScrollDownAnimation = () => (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1, delay: 2 }}
-    className="fixed bottom-5 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
-  >
-    <motion.div
-      initial={{ y: -10 }}
-      animate={{ y: 10 }}
-      transition={{
-        y: {
-          duration: 1.5,
-          yoyo: Infinity,
-          ease: "easeInOut",
-        },
-      }}
-      className="w-4 h-4 rounded-full bg-white"
-    ></motion.div>
-    <p className="text-gray-400 mt-1">Scroll Down</p>
-  </motion.div>
-);
+
 
 const About = () => {
   return (
@@ -69,20 +48,19 @@ const About = () => {
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-[#60a05b] text-[17px] max-w-3xl leading-[30px] text-center"
+        className="mt-4 text-[#5b9157] text-[20px] max-w-3xl leading-[30px] text-center"
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I love exploring new technologies to build creative solutions that solve real-world challenges.
+        Join me as I utilize my cybersecurity skills to develop tools, fortify existing architectures,
+        and venture into diverse areas of technology. Let's connect and chat about your latest project ideas!
+
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-      <ScrollDownAnimation />
+      
     </div>
   );
 };

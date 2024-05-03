@@ -27,16 +27,37 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import fourfingers from "./company/4fingers.png"
+import atome from "./company/atome.png"
+import cys from "./company/cys.png"
+import hpb from "./company/hpb.png"
+import mediacorp from "./company/mediacorp.png"
+import scenestealer from "./company/scenestealer.png"
+import thermofisher from "./company/Thermo Fisher Scientific.png"
+
+import fourfingersbg from "./company/4fingersbg.png"
+import atomebg from "./company/atomebg.png"
+import cysbg from "./company/cysbg.png"
+import mediacorpbg from "./company/mediacorpbg.jpg"
+import scenestealerbg from "./company/scenestealerbg.jpg"
+
+
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import ankit from "./ankit.png"
+import banhup from "./Bannhup.png"
+import elliot from "./Elliot.png"
 
 
 
 export {
   logo,
   backend,
+  banhup,
+  ankit,
+  elliot,
   creator,
   mobile,
   web,
@@ -62,6 +83,18 @@ export {
   shopify,
   starbucks,
   tesla,
+  fourfingers,
+  atome,
+  cys,
+  hpb,
+  mediacorp,
+  scenestealer,
+  thermofisher,
+  fourfingersbg,
+  atomebg,
+  cysbg,
+  mediacorpbg,
+  scenestealerbg,
   carrent,
   jobit,
   tripguide,

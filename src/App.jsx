@@ -14,10 +14,10 @@ const App = () => {
         <div className=' bg-[#e2dbc5]'>
         <About />
         </div>
-        <div className='bg-flower-pattern bg-repeat '>
+        <div className='bg-flower-pattern bg-repeat'>
         <Works />
         </div>
-        <div className='bg-paint-pattern bg-repeat'>
+        <div className='bg-[#d1cbb6]'>
         <Experience />
         </div>
         <div className='bg-light-pattern bg-cover'>

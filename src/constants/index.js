@@ -19,10 +19,25 @@ import {
   starbucks,
   tesla,
   shopify,
+  fourfingers,
+  atome,
+  cys,
+  hpb,
+  mediacorp,
+  scenestealer,
+  thermofisher,
+  fourfingersbg,
+  atomebg,
+  cysbg,
+  mediacorpbg,
+  scenestealerbg,
   carrent,
   jobit,
   tripguide,
   threejs,
+  ankit,
+  banhup,
+  elliot,
 } from "../assets";
 
 export const navLinks = [
@@ -45,18 +60,7 @@ const services = [
     title: "Hey there!",
     icon: web,
   },
-  // {
-  //   title: "React Native Developer",
-  //   icon: mobile,
-  // },
-  // {
-  //   title: "Backend Developer",
-  //   icon: backend,
-  // },
-  // {
-  //   title: "Content Creator",
-  //   icon: creator,
-  // },
+
 ];
 
 
@@ -64,101 +68,133 @@ const services = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Assistant Program Director",
+    company_name: "Cyber Youth Singapore",
     company_nameBg:"#73A2CC",
-    icon: starbucks,
+    icon: cys,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Nov 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Coordinate large-scale events with up to 150 participants, overseeing event planning, sponsor communication, and logistical arrangements",
     ],
-    cards: [
-      "Event Day1",
-      "Example Event Day 2"
+    images: [cysbg],
+  },
+
+  {
+    title: "Cyber Security Officer Intern",
+    company_name: "Mediacorp",
+    company_nameBg:"#73A2CC",
+    icon: mediacorp,
+    iconBg: "#E6DEDD",
+    date: "Sep 2023 - Feb 2024",
+    points: [
+      "Conducted security investigations and formulated incident response strategies using the latest security tools.",
+      "Streamlined the process of data collection, cleansing, and visualization to facilitate real-time insights generation.",
+      "Contributed to the development of the company's AI chatbot, encompassing both network (Azure) and software aspects.",
+      "Crafted proposals for the migration of company infrastructure and security tools",
     ],
-    images: [carrent, carrent],
+    
+    images: [mediacorpbg],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Events Facillitator",
+    company_name: "Scene Stealer",
     company_nameBg:"#FF6961",
-    icon: tesla,
+    icon: scenestealer,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Aug 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Communicating and Liaising with event participant and vendors",
+      "Event Setup and Breakdown"
     ],
-    images: [carrent, carrent],
+    images: [scenestealerbg],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Warehouse Assistant",
+    company_name: "ThermoFisher Scientific",
     company_nameBg:"#73A2CC",
-    icon: shopify,
+    icon: thermofisher,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Dec 2020 - Mar 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Led a team of 3.",
+      "Inventory management and Quality Control.",
+  
+    ],
+    images: [carrent],
+  },
+  {
+    title: "Technical Support",
+    company_name: "Health Promotion Board",
+    company_nameBg:"#73A2CC",
+    icon: hpb,
+    iconBg: "#E6DEDD",
+    date: "Sep 2020 - Dec 2020",
+    points: [
+      "Resolved customers’ technical inquiries and received 95% customer satisfaction.",
+      "Trained and assisted up to 300 users on how to operate the software application.",
+      "Troubleshot any software application problems and achieved 100% efficiency.",
     ],
     images: [carrent, carrent],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Brand Ambassador",
+    company_name: "Atome",
     company_nameBg:"#73A2CC",
-    icon: meta,
+    icon: atome,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Jul 2020 - Aug 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Engaging with Cusomters.",
+      "Driving Sales and Conversion.",
     ],
-    images: [carrent, carrent],
+    images: [atomebg],
+  },
+  {
+    title: "Cashier",
+    company_name: "4Fingers",
+    company_nameBg:"#73A2CC",
+    icon: fourfingers,
+    iconBg: "#E6DEDD",
+    date: "Nov 2019 - Jan 2020",
+    points: [
+      "Cash Handling.",
+      "Customer Service.",
+    ],
+    images: [fourfingersbg],
   },
 ];
 
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Rarely have I encountered a staff as dedicated to their role and team's success as Alphonsus. His commitment to excellence and willingness to go above and beyond make him a valuable asset to any organization. His proficiency and skill in coding are evident in the high-quality work he consistently deliver.",
+    name: "Lee Ban Hup",
+    designation: "Infrastructure Lead",
+    company: "Mediacorp",
+    image: banhup,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Alphonsus has demonstrated remarkable leadership qualities and exhibited exceptional resilience and dedication in effectively communicating with clients and meeting their professional requirements. Moreover, he has displayed outstanding proficiency in problem-solving and technical skills. Alphonsus is poised to excel in any environment he encounters.",
+    name: "Ankit Saurabh",
+    designation: "Lecturer",
+    company: "Singapore Polytechnic",
+    image: ankit,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "I have had the privilege of working with Alphonsus on countless projects, and I am continually impressed by his professionalism, reliability, and unwavering support for his teammates. Alphonsus is an incredible team player who consistently delivers for his team, and his commitment to achieving our shared goals always inspires me.",
+    name: "Elliot Ang",
+    designation: "Student Graduate",
+    company: "Singapore Polytechnic",
+    image: elliot,
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Goat Scan",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [

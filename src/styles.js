@@ -12,6 +12,13 @@ const styles = {
       "text-[#345832] font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
     sectionSubText:
       "sm:text-[18px] text-[14px] text-[#69a765] uppercase tracking-wider",
+    
+    carouselArrow: {
+      fontSize: "24px", // Adjust the font size to make the arrows larger
+      fontWeight: "bold", // Make the arrows bold
+      },
+
+      
   };
   
   export { styles };
