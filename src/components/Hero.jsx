@@ -21,18 +21,18 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className="flex flex-col justify-center items-center mt-5"
         >
-          <div className="w-12 h-12 rounded-full bg-green-950" />
-          <div className="w-2 sm:h-50 h-60 bg-gradient-to-b from-green-950 " />
+          <div className="w-12 h-12 rounded-full bg-yellow-500" />
+          <div className="w-2 sm:h-50 h-60 bg-gradient-to-b from-yellow-500 " />
         </motion.div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white `}>
-            Hi, I'm <span className="text-[#faf0e6]">Alphonsus</span>
+          <h1 className={`${styles.heroHeadText} text-[#ce8c46] `}>
+            Hi, I'm <span className="text-[#cce8c46]">Alphonsus</span>
           </h1>
 
           <div className="flex space-x-6 mt-10">
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => window.open("https://github.com/AlpTJS", "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
@@ -42,13 +42,13 @@ const Hero = () => {
               />
             </div>
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => window.open("www.linkedin.com/in/alphonsus-teo-a7087a244", "_blank")}
               className="w-9 h-9 flex justify-center cursor-pointer"
             >
               <img src={Linkedin} alt="source code" />
             </div>
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => window.open("https://www.instagram.com/_alphonsus_/", "_blank")}
               className="w-9 h-9 flex justify-center cursor-pointer"
             >
               <img src={Instagram} alt="source code" />

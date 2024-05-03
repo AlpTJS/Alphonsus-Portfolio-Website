@@ -1,5 +1,5 @@
 import React from 'react'
-import { github } from "../assets";
+import { github, Linkedin, Instagram } from "../assets";
 
 const Contact = () => {
   return (
@@ -10,35 +10,27 @@ const Contact = () => {
 
       <div className="flex space-x-6 ">
       <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              onClick={() => window.open("https://github.com/AlpTJS", "_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
                 src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
+                alt="source code"
+                className="w-1/2 h-1/2 object-contain"
               />
       </div>
       <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              onClick={() => window.open("www.linkedin.com/in/alphonsus-teo-a7087a244", "_blank")}
+              className="w-9 h-9 flex justify-center cursor-pointer"
             >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
+              <img src={Linkedin} alt="source code" />
       </div>
 
       <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              onClick={() => window.open("https://www.instagram.com/_alphonsus_/", "_blank")}
+              className="w-9 h-9 flex justify-center cursor-pointer"
             >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
+              <img src={Instagram} alt="source code" />
       </div>
     </div>
     </div>

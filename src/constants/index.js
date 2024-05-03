@@ -114,7 +114,7 @@ const experiences = [
   {
     title: "Warehouse Assistant",
     company_name: "ThermoFisher Scientific",
-    company_nameBg:"#73A2CC",
+    company_nameBg:"#FF6961",
     icon: thermofisher,
     iconBg: "#383E56",
     date: "Dec 2020 - Mar 2021",
@@ -142,7 +142,7 @@ const experiences = [
   {
     title: "Brand Ambassador",
     company_name: "Atome",
-    company_nameBg:"#73A2CC",
+    company_nameBg:"#FF6961",
     icon: atome,
     iconBg: "#E6DEDD",
     date: "Jul 2020 - Aug 2021",
@@ -155,7 +155,7 @@ const experiences = [
   {
     title: "Cashier",
     company_name: "4Fingers",
-    company_nameBg:"#73A2CC",
+    company_nameBg:"#FF6961",
     icon: fourfingers,
     iconBg: "#E6DEDD",
     date: "Nov 2019 - Jan 2020",
