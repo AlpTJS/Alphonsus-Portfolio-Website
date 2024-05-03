@@ -4,7 +4,7 @@
 
 ![image](https://github.com/AlpTJS/Alphonsus-Portfolio-Website/assets/134588108/40658623-610f-42e4-8667-02f9175d0847)
 
-![image](https://github.com/AlpTJS/Alphonsus-Portfolio-Website/assets/134588108/59f04149-7e95-416a-9533-fd1860c08430)
+![image](https://github.com/AlpTJS/Alphonsus-Portfolio-Website/assets/134588108/ec40bccf-dc10-4edd-bb21-7e0396d57eb2)
 
 ![image](https://github.com/AlpTJS/Alphonsus-Portfolio-Website/assets/134588108/9fa94624-f47a-4acb-9dfd-ddbce8bfe835)
 
