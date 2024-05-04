@@ -106,7 +106,7 @@ const experiences = [
     company_nameBg:"#FF6961",
     icon: scenestealer,
     iconBg: "#E6DEDD",
-    date: "Aug 2023",
+    date: "Aug 2023 - Sep 2023",
     points: [
       "Communicating and Liaising with event participant and vendors",
       "Event Setup and Breakdown"
