@@ -188,7 +188,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "I have had the privilege of working with Alphonsus on countless projects, and I am continually impressed by his professionalism, reliability, and unwavering support for his teammates. Alphonsus is an incredible team player who consistently delivers for his team, and his commitment to achieving our shared goals always inspires me.",
+      "I have had the privilege of working with Alphonsus on countless project, and he continually impresses me with his professionalism, reliability and willingness to help when he cans. Alphonsus is also an incredible team player who always delivers and commits himself to achieving the teams goals.",
     name: "Elliot Ang",
     designation: "Student Graduate",
     company: "Singapore Polytechnic",
