@@ -31,6 +31,8 @@ import {
   cysbg,
   mediacorpbg,
   scenestealerbg,
+  hpbbg,
+  thermofisherbg,
   carrent,
   jobit,
   tripguide,
@@ -123,7 +125,7 @@ const experiences = [
       "Inventory management and Quality Control.",
   
     ],
-    images: [carrent],
+    images: [thermofisherbg],
   },
   {
     title: "Technical Support",
@@ -137,7 +139,7 @@ const experiences = [
       "Trained and assisted up to 300 users on how to operate the software application.",
       "Troubleshot any software application problems and achieved 100% efficiency.",
     ],
-    images: [carrent, carrent],
+    images: [hpbbg],
   },
   {
     title: "Brand Ambassador",

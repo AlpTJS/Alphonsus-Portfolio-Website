@@ -40,6 +40,8 @@ import atomebg from "./company/atomebg.png"
 import cysbg from "./company/cysbg.png"
 import mediacorpbg from "./company/mediacorpbg.jpg"
 import scenestealerbg from "./company/scenestealerbg.jpg"
+import hpbbg from "./company/hpbbg.png"
+import thermofisherbg from "./company/thermofisherbg.jpg"
 
 
 
@@ -100,6 +102,8 @@ export {
   cysbg,
   mediacorpbg,
   scenestealerbg,
+  hpbbg,
+  thermofisherbg,
   carrent,
   jobit,
   tripguide,
