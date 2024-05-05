@@ -1,25 +1,17 @@
-// import React from 'react'
-
-// const Experience = () => {
-//   return (
-//     <div>Experience</div>
-//   )
-// }
-
-// export default Experience
-
 import React from "react";
+import { motion } from "framer-motion";
+
+import { styles } from "../styles";
+import { SectionWrapper } from "../hoc";
+import { textVariant,fadeIn } from "../utils/motion";
+import { experiences } from "../constants";
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
-import "react-vertical-timeline-component/style.min.css";
 
-import { styles } from "../styles";
-import { experiences } from "../constants";
-import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
+import "react-vertical-timeline-component/style.min.css";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
@@ -90,25 +82,8 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-          Job Experience
-        </h2>
-
-        <p
-          className={`${styles.sectionSubText} text-center flex items-center justify-center `}
-        >
-          <h2 className="text-[#73A2CC]">Tech</h2>
-          <h2>&nbsp;</h2>
-          <h2 className="text-[#FAF8F6]">&</h2>
-          <h2>&nbsp;</h2>
-          <h2 className="text-[#FF6961]">Others</h2>
-        </p>
-      </motion.div>
-
-      {/* Click Experiences to modify description*/}
-      <div className="mt-20 flex flex-col">
+    <div className="flex flex-col">
+      <div>
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard
@@ -118,7 +93,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </div>
   );
 };
 

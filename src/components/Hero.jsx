@@ -21,13 +21,13 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className="flex flex-col justify-center items-center mt-5"
         >
-          <div className="w-12 h-12 rounded-full bg-yellow-500" />
-          <div className="w-2 sm:h-50 h-60 bg-gradient-to-b from-yellow-500 " />
+          <div className="w-12 h-12 rounded-full bg-[#345832]" />
+          <div className="w-2 sm:h-50 h-60 bg-gradient-to-b from-[#345832] " />
         </motion.div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-[#ce8c46] `}>
-            Hi, I'm <span className="text-[#cce8c46]">Alphonsus</span>
+          <h1 className={`${styles.heroHeadText} `}>
+            Hi, I'm <span className="text-[#345832]">Alphonsus</span>
           </h1>
 
           <div className="flex space-x-6 mt-10">

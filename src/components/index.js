@@ -2,6 +2,7 @@
 import Hero from './Hero';
 import Navbar from './Navbar';
 import About from './About';
+import Experienceheader from './Experienceheader';
 import Experience from './Experience';
 import Organization from './Organization';
 import Works from './Works';
@@ -14,6 +15,7 @@ export {
   Hero,
   Navbar,
   About,
+  Experienceheader,
   Experience,
   Organization,
   Works,
