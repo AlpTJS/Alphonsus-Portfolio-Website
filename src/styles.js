@@ -18,6 +18,8 @@ const styles = {
       fontWeight: "bold", // Make the arrows bold
       },
 
+  
+
       
   };
   
