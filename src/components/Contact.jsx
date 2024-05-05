@@ -1,15 +1,15 @@
 import React from 'react'
 import { github, Linkedin, Instagram } from "../assets";
 
+
 const Contact = () => {
   return (
-    <footer className="bg-gray-800 text-white text-xl font-bold">
-    <div className="ml-10 mr-10 text-center py-4 flex items-center justify-between">
+<footer className="flex w-full xs:flex-row bg-gray-800 text-white text-xl font-bold flex-col justify-between ">
 
-      <div className="flex mr-10 ">&copy; 2023 Alphonsus &nbsp;|&nbsp; (╯°□°）╯ AlphonsusTeo@outlook.com</div>
+      <div className="flex ml-3 my-3 ">&copy; 2023 Alphonsus &nbsp;|&nbsp; (╯°□°）╯ AlphonsusTeo@outlook.com</div>
 
-      <div className="flex space-x-6 ">
-      <div
+      <div className="flex space-x-3 mx-3 my-3 ">
+              <div
               onClick={() => window.open("https://github.com/AlpTJS", "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
@@ -33,7 +33,7 @@ const Contact = () => {
               <img src={Instagram} alt="source code" />
       </div>
     </div>
-    </div>
+  
     </footer>
   );
 }
